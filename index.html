@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>ProjetJs</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="left">
+          <input type="search" class="search" />
+          <div class="element">
+            <div class="teacher box">
+              <div>
+                <span class="teachicone"
+                  ><i class="fa-solid fa-person-chalkboard icone"></i
+                ></span>
+                <span class="number">6</span>
+              </div>
+              <div>
+                <span class="">Enseign.</span>
+                <i class="fa-solid fa-plus icone"></i>
+              </div>
+            </div>
+
+            <div class="classroom box">
+              <div>
+                <span class="rmicone"
+                  ><i class="fa-solid fa-house-user"></i
+                ></span>
+                <span class="number">6</span>
+              </div>
+              <div>
+                <span class="">Salles</span>
+                <i class="fa-solid fa-plus icone"></i>
+              </div>
+            </div>
+
+            <div class="course box">
+              <div>
+                <span class="clicone"><i class="fa-solid fa-users"></i></span>
+                <span class="number">6</span>
+              </div>
+              <div>
+                <span class="">Cours</span>
+                <i class="fa-solid fa-plus icone"></i>
+              </div>
+            </div>
+
+            <div class="module box">
+              <div>
+                <span class="tricone"
+                  ><i class="fa-solid fa-trash-can icone"></i
+                ></span>
+                <span class="number">6</span>
+              </div>
+              <div>
+                <span class="classes">Classes</span>
+                <i class="fa-solid fa-plus icone"></i>
+              </div>
+            </div>
+          </div>
+
+          <select class="selection"></select>
+        </div>
+
+        <!-- div right -->
+        <div class="right">
+          <div class="rightheader">
+            <div class="divplaning">
+              <span class="planning">Planning:</span>
+              <span class="num-planning">102</span>
+            </div>
+            <div id="btoggle">
+              <i class="slider"></i>
+            </div>
+          </div>
+
+          <div class="postheader1">
+            <span class="nbcours">0</span>&nbsp cours
+          </div>
+
+          <div class="postheader2">
+            <div class="space"></div>
+            <div class="heure">
+              <span>8H</span>
+              <span>9H</span>
+              <span>10H</span>
+              <span>11H</span>
+              <span>12H</span>
+              <span>13H</span>
+              <span>14H</span>
+              <span>15H</span>
+              <span>16H</span>
+              <span>17H</span>
+            </div>
+          </div>
+
+          <div class="postheader3">
+            <div>
+              <div class="jr1">
+                <span>Lundi</span>
+                <i class="fa-solid fa-plus iconeday" data-day="1"></i>
+              </div>
+              <div class="day-content" id="day_1"></div>
+            </div>
+
+            <div>
+              <div class="jr2">
+                <span>Mardi</span
+                ><i class="fa-solid fa-plus iconeday" data-day="2"></i>
+              </div>
+              <div class="day-content" id="day_2"></div>
+            </div>
+
+            <div>
+              <div class="jr3">
+                <span>Mercredi</span
+                ><i class="fa-solid fa-plus iconeday" data-day="3"></i>
+              </div>
+              <div class="day-content" id="day_3"></div>
+            </div>
+
+            <div>
+              <div class="jr4">
+                <span>Jeudi</span
+                ><i class="fa-solid fa-plus iconeday" data-day="4"></i>
+              </div>
+              <div class="day-content" id="day_4"></div>
+            </div>
+
+            <div>
+              <div class="jr5">
+                <span>Vendredi</span
+                ><i class="fa-solid fa-plus iconeday" data-day="5"></i>
+              </div>
+              <div class="day-content" id="day_5"></div>
+            </div>
+
+            <div>
+              <div class="jr6">
+                <span>Samedi</span
+                ><i class="fa-solid fa-plus iconeday" data-day="6"></i>
+              </div>
+              <div class="day-content" id="day_6"></div>
+            </div>
+
+            <div>
+              <div class="jr7">
+                <span>Dimanche</span
+                ><i class="fa-solid fa-plus iconeday" data-day="7"></i>
+              </div>
+              <div class="day-content" id="day_7"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-container">
+        <div class="modal">
+          <div class="header-2">
+            <h2>Modal title</h2>
+          </div>
+          <div class="form">
+            <div class="name">
+              <p>Module</p>
+              <p>Salles</p>
+              <p>Profs</p>
+              <p>Classes</p>
+              <p>Heure de Debut</p>
+              <p>Heure de fin</p>
+            </div>
+            <div class="select-option">
+              <p><select name="" class="select-mod select1"></select></p>
+              <p><select name="" class="select-mod select2"></select></p>
+              <p><select name="" class="select-mod select3"></select></p>
+              <p><select name="" class="select-mod select6"></select></p>
+              <p><select name="" class="select-mod select4"></select></p>
+              <p><select name="" class="select-mod select5"></select></p>
+            </div>
+          </div>
+          <div class="footer">
+            <button class="add-btn">Ajouter</button>
+            <button class="cancel-btn">Annuler</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script2.js"></script>
+</html>
